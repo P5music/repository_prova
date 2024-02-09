@@ -1,0 +1,3 @@
+[submodule "eu/it/bo/submodule1"]
+	path = eu/it/bo/submodule1
+	url = https://github.com/P5music/submodule1
