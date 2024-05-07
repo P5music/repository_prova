@@ -1,0 +1,275 @@
+[ {
+        "appVersion": "1.10.4",
+        "compatibilityLevel": 10,
+        "code": "",
+        "listCode": "",
+        "queryCode": "",
+        "title": "Prova variants with directives",
+        "tags": "",
+        "listTags": "",
+        "requestType": "webview",
+        "query": "    locale=  platform=   english  android",
+        "parameters": [
+            {
+                "symbolPosition": 0,
+                "type": "text",
+                "label": "en-en:inglese,it-it:italiano",
+                "value": "",
+                "tagOptions": "",
+                "delta": "",
+                "formatString": "",
+                "mode": "variable"
+            },
+            {
+                "symbolPosition": 1,
+                "type": "text",
+                "label": "en-en:",
+                "value": "",
+                "tagOptions": "",
+                "delta": "",
+                "formatString": "",
+                "mode": "variable"
+            },
+            {
+                "symbolPosition": 2,
+                "type": "text",
+                "label": ":italiano",
+                "value": "",
+                "tagOptions": "",
+                "delta": "",
+                "formatString": "",
+                "mode": "variable"
+            },{
+                "symbolPosition": 3,
+                "type": "text",
+                "label": "default",
+                "value": "",
+                "tagOptions": "",
+                "delta": "",
+                "formatString": "",
+                "mode": "variable"
+            }
+        ],
+        "launchViewParameters": [
+            {
+                "symbolPosition": 74,
+                "type": "text",
+                "label": "",
+                "value": "default",
+                "tagOptions": "",
+                "delta": "",
+                "formatString": "",
+                "mode": "options"
+            },
+            {
+                "symbolPosition": 85,
+                "type": "text",
+                "label": "",
+                "value": "default",
+                "tagOptions": "ios:apple,android:google",
+                "delta": "",
+                "formatString": "",
+                "mode": "options"
+            },
+            {
+                "symbolPosition": 88,
+                "type": "directive",
+                "label": "",
+                "condition": "en-en",
+                "delta": "",
+                "formatString": "",
+                "mode": "if"
+            },
+            {
+                "symbolPosition": 97,
+                "type": "directive",
+                "label": "",
+                "condition": "android",
+                "delta": "",
+                "formatString": "",
+                "mode": "if"
+            }
+        ],
+        "launchViewHTML": "<!DOCTYPE html>\n<html><head><\/head><body>\n<p style=\"font-size:2em\">locale=  platform=  \n english  android\n<\/p>\n<\/body><\/html>"
+    },
+    {
+        "appVersion": "1.10.4",
+        "compatibilityLevel": 10,
+        "code": "",
+        "listCode": "",
+        "queryCode": "",
+        "title": "Prova variants with directives",
+        "tags": "",
+        "listTags": "",
+        "requestType": "webview",
+        "query": "locale=  platform=   english  android",
+        "parameters": [
+            {
+                "symbolPosition": 7,
+                "type": "text",
+                "label": "en-en:inglese,it-it:italiano",
+                "value": "default",
+                "tagOptions": "en-en:inglese,it-it:italiano",
+                "delta": "",
+                "formatString": "",
+                "mode": "options"
+            },
+            {
+                "symbolPosition": 18,
+                "type": "text",
+                "label": "en-en:",
+                "value": "default",
+                "tagOptions": "ios:apple,android:google",
+                "delta": "",
+                "formatString": "",
+                "mode": "options"
+            },
+            {
+                "symbolPosition": 20,
+                "type": "directive",
+                "label": ":inglese",
+                "condition": "en-en",
+                "delta": "",
+                "formatString": "",
+                "mode": "if"
+            },
+            {
+                "symbolPosition": 29,
+                "type": "directive",
+                "label": "",
+                "condition": "android",
+                "delta": "",
+                "formatString": "",
+                "mode": "if"
+            }
+        ],
+        "launchViewParameters": [
+            {
+                "symbolPosition": 74,
+                "type": "text",
+                "label": "",
+                "value": "default",
+                "tagOptions": "en-en:inglese,it-it:italiano",
+                "delta": "",
+                "formatString": "",
+                "mode": "options"
+            },
+            {
+                "symbolPosition": 85,
+                "type": "text",
+                "label": "",
+                "value": "default",
+                "tagOptions": "ios:apple,android:google",
+                "delta": "",
+                "formatString": "",
+                "mode": "options"
+            },
+            {
+                "symbolPosition": 88,
+                "type": "directive",
+                "label": "",
+                "condition": "en-en",
+                "delta": "",
+                "formatString": "",
+                "mode": "if"
+            },
+            {
+                "symbolPosition": 97,
+                "type": "directive",
+                "label": "",
+                "condition": "android",
+                "delta": "",
+                "formatString": "",
+                "mode": "if"
+            }
+        ],
+        "launchViewHTML": "<!DOCTYPE html>\n<html><head><\/head><body>\n<p style=\"font-size:2em\">locale=  platform=  \n english  android\n<\/p>\n<\/body><\/html>"
+    },
+    {
+        "appVersion": "1.10.4",
+        "compatibilityLevel": 10,
+        "code": "",
+        "listCode": "",
+        "queryCode": "",
+        "title": "prova html nested",
+        "tags": "",
+        "listTags": "",
+        "requestType": "webview",
+        "query": "<myqueries-query>\n<script class=\"myqueries-query-json\" type=\"text\/json\">\n{\"appVersion\":\"1.10.4\",\"compatibilityLevel\":10,\"code\":\"\",\"listCode\":\"\",\"queryCode\":\"\",\"title\":\"Prova variants\",\"tags\":\"\",\"listTags\":\"\",\"requestType\":\"webview\",\"query\":\"locale=  platform= \",\"parameters\":[{\"symbolPosition\":7,\"type\":\"text\",\"label\":\"\",\"value\":\"default\",\"tagOptions\":\"en-en:inglese,it-it:italiano\",\"delta\":\"\",\"formatString\":\"\",\"mode\":\"options\"},{\"symbolPosition\":18,\"type\":\"text\",\"label\":\"\",\"value\":\"default\",\"tagOptions\":\"ios:apple,android:google\",\"delta\":\"\",\"formatString\":\"\",\"mode\":\"options\"}],\"launchViewParameters\":[{\"symbolPosition\":49,\"type\":\"text\",\"label\":\"\",\"value\":\"default\",\"tagOptions\":\"en-en:inglese,it-it:italiano\",\"delta\":\"\",\"formatString\":\"\",\"mode\":\"options\"},{\"symbolPosition\":60,\"type\":\"text\",\"label\":\"\",\"value\":\"default\",\"tagOptions\":\"ios:apple,android:google\",\"delta\":\"\",\"formatString\":\"\",\"mode\":\"options\"}],\"launchViewHTML\":\"<!DOCTYPE html>\\n<html><head><\\\/head><body>\\nlocale=  platform=  \\n<\\\/body><\\\/html>\"}\n<\/script>\nClicca qui\n\n<\/myqueries-query>",
+        "parameters": [],
+        "launchViewParameters": [],
+        "launchViewHTML": ""
+    },
+    {
+        "appVersion": "1.10.4",
+        "compatibilityLevel": 10,
+        "code": "",
+        "listCode": "",
+        "queryCode": "",
+        "title": "Prova variants",
+        "tags": "",
+        "listTags": "",
+        "requestType": "webview",
+        "query": "locale=  platform= ",
+        "parameters": [
+            {
+                "symbolPosition": 7,
+                "type": "text",
+                "label": "",
+                "value": "default",
+                "tagOptions": "en-en:inglese,it-it:italiano",
+                "delta": "",
+                "formatString": "",
+                "mode": "options"
+            },
+            {
+                "symbolPosition": 18,
+                "type": "text",
+                "label": "",
+                "value": "default",
+                "tagOptions": "ios:apple,android:google",
+                "delta": "",
+                "formatString": "",
+                "mode": "options"
+            }
+        ],
+        "launchViewParameters": [
+            {
+                "symbolPosition": 74,
+                "type": "text",
+                "label": "",
+                "value": "default",
+                "tagOptions": "en-en:inglese,it-it:italiano",
+                "delta": "",
+                "formatString": "",
+                "mode": "options"
+            },
+            {
+                "symbolPosition": 85,
+                "type": "text",
+                "label": "",
+                "value": "default",
+                "tagOptions": "ios:apple,android:google",
+                "delta": "",
+                "formatString": "",
+                "mode": "options"
+            }
+        ],
+        "launchViewHTML": "<!DOCTYPE html>\n<html><head><\/head><body>\n<p style=\"font-size:2em\">locale=  platform=  \n<\/p>\n<\/body><\/html>"
+    },
+    {
+        "appVersion": "1.10.4",
+        "compatibilityLevel": 10,
+        "code": "",
+        "listCode": "",
+        "queryCode": "",
+        "title": "prova launch",
+        "tags": "",
+        "listTags": "",
+        "requestType": "url",
+        "query": "https://www.myqueries.info/demo/prova_variants.myq?launchquery",
+        "parameters": [],
+        "launchViewParameters": [],
+        "launchViewHTML": ""
+    }
+]
