@@ -1,4 +1,4 @@
-document.write('''
+document.write(`
 <div class="prodotto-item">
   <h2>Angurie</h2>
   <p>Frutti biologici, peso variabile da 2 a 5 Kg</p>
@@ -28,4 +28,5 @@ document.write('''
   <h2>Friselle</h2>
   <p>Varietà: normali e integrali</p>
 <img height=100 src="https://www.myqueries.info/demo/bbb_borgagne/images/friselle.jpg" alt="Foto del prodotto">
-</div>''');
+</div>`
+);
