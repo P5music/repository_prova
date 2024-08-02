@@ -1,0 +1,11 @@
+#file di configurazione per valori
+#relativi a Bollino LuFraciddu Borgagne
+
+#per i numeri di telefono usare sempre formato internazionale completo, cioè col +39 davanti
+numero_cell_federico:+393284213064
+numero_whatsapp_federico:+393284213064
+email_lufraciddu:lufraciddu@gmail.com
+numero_polizia_locale_melendugno:+390832832251
+indirizzo_polizia_locale_melendugno:Piazza Risorgimento, 24, 73026 Melendugno LE
+numero_guardia_medica_melendugno:+390832831002
+indirizzo_guardia_medica_melendugno:Via G. D'Amely, 16 - 73026 Melendugno, (LE)
