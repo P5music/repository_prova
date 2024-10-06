@@ -1,0 +1,40 @@
+[
+    {
+        "appVersion": "1.10.4",
+        "compatibilityLevel": 10,
+        "code": "gh elite bologna",
+        "listCode": "",
+        "queryCode": "",
+        "license": "Copyright MyQueries - All rights reserved",
+        "externalValuesUrl": "https:\/\/www.myqueries.info\/demo\/grand_hotel_elite_bologna\/config.yaml",
+        "title": "Grand Hotel Elite",
+        "tags": "",
+        "listTags": "",
+        "requestType": "url",
+        "query": " ",
+        "parameters": [
+            
+            {
+                "symbolPosition": 0,
+                "type": "text",
+                "label": "list url",
+                "value": "https:\/\/www.myqueries.info\/demo\/grand_hotel_elite_bologna\/grand_hotel_elite_bologna.myq",
+                "delta": "",
+                "formatString": "",
+                "mode": "predetermined"
+            }
+            
+        ],
+        "launchViewParameters": [
+            {
+                "symbolPosition": 174,
+                "type": "text",
+                "label": "image url",
+                "value": "https:\/\/cloud-1de12d.b-cdn.net\/media\/original\/d9e7dfeeb7c7dc1134cdee48818cc89e\/image_123650291.svg",
+                "delta": "",
+                "formatString": "",
+                "mode": "predetermined"
+            }
+        ],
+        "launchViewHTML": "<!DOCTYPE html>\n<html><head>\n<style>\n.center {\n  display: block;\n  margin-left: auto;\n  margin-right: auto;\n  width: 50%;\n\n}\n<\/style>\n\n<\/head><body>\n<img class=\"center\"\nsrc=\" \">\n<\/img><\/body><\/html>"
+    }]

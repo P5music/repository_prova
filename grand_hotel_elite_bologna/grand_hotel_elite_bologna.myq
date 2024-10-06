@@ -1,0 +1,1545 @@
+[
+    {
+        "appVersion": "1.10.4",
+        "compatibilityLevel": 10,
+        "code": "",
+        "listCode": "",
+        "queryCode": "",
+        "license": "Copyright MyQueries - All rights reserved",
+        "externalValuesUrl": "",
+        "title": "Grand Hotel Elite",
+        "tags": "",
+        "listTags": "",
+        "requestType": "url",
+        "query": "      ",
+        "parameters": [
+            {
+                "symbolPosition": 0,
+                "type": "directive",
+                "label": "",
+                "variant": true,
+                "condition": "it",
+                "delta": "",
+                "formatString": "",
+                "mode": "if"
+            },
+            {
+                "symbolPosition": 1,
+                "type": "text",
+                "label": "website url it",
+                "value": "https:\/\/www.grandhotelelitebologna.it",
+                "delta": "",
+                "formatString": "",
+                "mode": "predetermined"
+            },
+            {
+                "symbolPosition": 2,
+                "type": "directive",
+                "label": "",
+                "variant": true,
+                "condition": "it",
+                "delta": "",
+                "formatString": "",
+                "mode": "endif"
+            },
+            {
+                "symbolPosition": 3,
+                "type": "directive",
+                "label": "",
+                "variant": true,
+                "condition": "en",
+                "delta": "",
+                "formatString": "",
+                "mode": "if"
+            },
+            {
+                "symbolPosition": 4,
+                "type": "text",
+                "label": "website url en",
+                "value": "https:\/\/www.grandhotelelitebologna.it\/en-home",
+                "delta": "",
+                "formatString": "",
+                "mode": "predetermined"
+            },
+            {
+                "symbolPosition": 5,
+                "type": "directive",
+                "label": "",
+                "variant": true,
+                "condition": "en",
+                "delta": "",
+                "formatString": "",
+                "mode": "endif"
+            }
+        ],
+        "launchViewParameters": [
+            {
+                "symbolPosition": 174,
+                "type": "text",
+                "label": "image url",
+                "value": "https:\/\/cloud-1de12d.b-cdn.net\/media\/original\/d9e7dfeeb7c7dc1134cdee48818cc89e\/image_123650291.svg",
+                "delta": "",
+                "formatString": "",
+                "mode": "predetermined"
+            }
+        ],
+        "launchViewHTML": "<!DOCTYPE html>\n<html><head>\n<style>\n.center {\n  display: block;\n  margin-left: auto;\n  margin-right: auto;\n  width: 50%;\n\n}\n<\/style>\n\n<\/head><body>\n<img class=\"center\"\nsrc=\" \">\n<\/img><\/body><\/html>"
+    },
+    {
+        "appVersion": "1.10.4",
+        "compatibilityLevel": 10,
+        "code": "",
+        "listCode": "",
+        "queryCode": "",
+        "license": "Copyright MyQueries - All rights reserved",
+        "externalValuesUrl": "",
+        "title": "Arrivare all'Hotel",
+        "tags": "",
+        "listTags": "",
+        "requestType": "url",
+        "query": "  http:\/\/maps.apple.com\/?dirflg= &daddr=\n https:\/\/www.google.com\/maps\/dir\/?api=1&origin= &travelmode= &destination=\n  \n https:\/\/www.google.com\/maps\/dir\/?api=1&origin= &travelmode= &destination=\n  ",
+        "parameters": [
+            {
+                "symbolPosition": 0,
+                "type": "directive",
+                "label": "",
+                "variant": true,
+                "condition": "ios",
+                "delta": "",
+                "formatString": "",
+                "mode": "if"
+            },
+            {
+                "symbolPosition": 1,
+                "type": "directive",
+                "label": "",
+                "condition": "amaps",
+                "delta": "",
+                "formatString": "",
+                "mode": "if"
+            },
+            {
+                "symbolPosition": 32,
+                "type": "text",
+                "label": "travel mode",
+                "value": "r",
+                "tagOptions": "transit:r ,walking:w ,bicycling:c ,driving: d",
+                "delta": "",
+                "formatString": "",
+                "mode": "options"
+            },
+            {
+                "symbolPosition": 41,
+                "type": "directive",
+                "label": "",
+                "condition": "amaps",
+                "delta": "",
+                "formatString": "",
+                "mode": "elseif"
+            },
+            {
+                "symbolPosition": 88,
+                "type": "location",
+                "label": "",
+                "delta": "",
+                "formatString": "DDD.DDDDD,EEE.EEEEE",
+                "mode": "variable"
+            },
+            {
+                "symbolPosition": 101,
+                "type": "text",
+                "label": "travel mode",
+                "value": "transit",
+                "tagOptions": "transit:transit,walking:walking,bicycling:bicycling,driving:driving",
+                "delta": "",
+                "formatString": "",
+                "mode": "options"
+            },
+            {
+                "symbolPosition": 116,
+                "type": "directive",
+                "label": "",
+                "condition": "amaps",
+                "delta": "",
+                "formatString": "",
+                "mode": "endif"
+            },
+            {
+                "symbolPosition": 117,
+                "type": "directive",
+                "label": "",
+                "condition": "gmaps",
+                "delta": "",
+                "formatString": "",
+                "mode": "endif"
+            },
+            {
+                "symbolPosition": 119,
+                "type": "directive",
+                "label": "",
+                "variant": true,
+                "condition": "ios",
+                "delta": "",
+                "formatString": "",
+                "mode": "elseif"
+            },
+            {
+                "symbolPosition": 166,
+                "type": "location",
+                "label": "",
+                "delta": "",
+                "formatString": "DDD.DDDDD,EEE.EEEEE",
+                "mode": "variable"
+            },
+            {
+                "symbolPosition": 179,
+                "type": "text",
+                "label": "travel mode",
+                "value": "transit",
+                "tagOptions": "transit:transit,walking:walking,bicycling:bicycling,driving:driving",
+                "delta": "",
+                "formatString": "",
+                "mode": "options"
+            },
+            {
+                "symbolPosition": 194,
+                "type": "directive",
+                "label": "",
+                "variant": true,
+                "condition": "ios",
+                "delta": "",
+                "formatString": "",
+                "mode": "endif"
+            },
+            {
+                "symbolPosition": 195,
+                "type": "text",
+                "label": "destination",
+                "value": "Grand Hotel Elite, VIA SAFFI 36 , 40131 - BOLOGNA",
+                "delta": "",
+                "formatString": "",
+                "mode": "predetermined"
+            }
+        ],
+        "launchViewParameters": [
+            {
+                "symbolPosition": 232,
+                "type": "text",
+                "label": "image url",
+                "value": "https:\/\/cloud-1de12d.b-cdn.net\/media\/iW=180&iH=any\/41cc45f86e16a3d137d76d9d7823e181.png",
+                "delta": "",
+                "formatString": "",
+                "mode": "predetermined"
+            },
+            {
+                "symbolPosition": 311,
+                "type": "text",
+                "label": "travel mode",
+                "value": "directions_bus",
+                "tagOptions": "transit:directions_bus,walking:directions_walk,bicycling:directions_bike,driving:directions_car",
+                "delta": "",
+                "formatString": "",
+                "mode": "options"
+            },
+            {
+                "symbolPosition": 318,
+                "type": "text",
+                "label": "displayed title",
+                "value": "",
+                "variant": true,
+                "tagOptions": "it:Arrivare all'Hotel,en:Get to the hotel",
+                "delta": "",
+                "formatString": "",
+                "mode": "options"
+            }
+        ],
+        "launchViewHTML": "<!DOCTYPE html>\n<html><head><link href=\"https:\/\/fonts.googleapis.com\/icon?family=Material+Icons\" rel=\"stylesheet\"\/><\/head><body>\n<p style=\"vertical-align:middle;font-size:2em;\" >\n<img style=\"vertical-align:middle;height:50px;\"\nsrc=\" \" \/>\n<i class=\"material-icons\" style=\"vertical-align:middle;font-size:50px;\">\n \n<\/i>\n \n<\/p><\/body><\/html>"
+    },
+    {
+        "appVersion": "1.10.4",
+        "compatibilityLevel": 9,
+        "code": "",
+        "listCode": "",
+        "queryCode": "",
+        "license": "Copyright MyQueries - All rights reserved",
+        "externalValuesUrl": "https:\/\/www.myqueries.info\/demo\/grand_hotel_elite_bologna\/config.yaml",
+        "title": "Reception",
+        "tags": "",
+        "listTags": "",
+        "requestType": "webview",
+        "query": "<DOCTYPE html>\n<html><head><link href=\"https:\/\/fonts.googleapis.com\/icon?family=Material+Icons\" rel=\"stylesheet\"\/><\/head>\n<body><p style=\"vertical-align:middle;font-size:2em;\" >\n <br><br>\n <br>\n<br>\n<myqueries-query>\n<script class=\"myqueries-query-json\" type=\"text\/json\">\n <\/script>\n<i class=\"material-icons\" style=\"vertical-align:middle;font-size:50px;\"><span\/>call\n<\/i>\n<\/myqueries-query>\n\n\n<\/p><\/body><\/html>\n\n",
+        "parameters": [
+            {
+                "symbolPosition": 178,
+                "type": "text",
+                "label": "title",
+                "value": "",
+                "variant": true,
+                "tagOptions": "it:Chiama la Reception,en:Call Reception",
+                "delta": "",
+                "formatString": "",
+                "mode": "options"
+            },
+            {
+                "symbolPosition": 188,
+                "type": "text",
+                "label": "",
+                "value": "24H\/24",
+                "delta": "",
+                "formatString": "",
+                "mode": "predetermined"
+            },
+            {
+                "symbolPosition": 272,
+                "type": "query",
+                "label": "Query Chiamata telefonica",
+                "query": {
+                    "appVersion": "1.10.4",
+                    "compatibilityLevel": 10,
+                    "code": "",
+                    "listCode": "",
+                    "queryCode": "",
+                    "license": "Copyright MyQueries - All rights reserved",
+                    "externalValuesUrl": "https:\/\/www.myqueries.info\/demo\/grand_hotel_elite_bologna\/config.yaml",
+                    "title": "Chiama Grand Hotel Elite",
+                    "tags": "",
+                    "listTags": "",
+                    "requestType": "url",
+                    "query": "tel: ",
+                    "parameters": [
+                        {
+                            "symbolPosition": 4,
+                            "type": "text",
+                            "label": "Tel. Grand Hotel Elite",
+                            "key": "numero_telefono_hotel",
+                            "editable": false,
+                            "delta": "",
+                            "formatString": "",
+                            "mode": "global"
+                        }
+                    ],
+                    "launchViewParameters": [],
+                    "launchViewHTML": "<!DOCTYPE html>\n<html><head><link href=\"https:\/\/fonts.googleapis.com\/icon?family=Material+Icons\" rel=\"stylesheet\"\/><\/head><body>\n<p style=\"vertical-align:middle;font-size:2em;\" >\n<img style=\"vertical-align:middle;height:50px;\"\nsrc=\"https:\/\/cloud-1de12d.b-cdn.net\/media\/iW=180&iH=any\/41cc45f86e16a3d137d76d9d7823e181.png\" \/>\n<i class=\"material-icons\" style=\"vertical-align:middle;font-size:50px;\"><span\/>call\n<\/i>\nGrand Hotel Elite\n<\/p><\/body><\/html>"
+                },
+                "delta": "",
+                "formatString": "",
+                "mode": "json"
+            }
+        ],
+        "launchViewParameters": [
+            {
+                "symbolPosition": 232,
+                "type": "text",
+                "label": "hotel logo",
+                "value": "https:\/\/cloud-1de12d.b-cdn.net\/media\/iW=180&iH=any\/41cc45f86e16a3d137d76d9d7823e181.png",
+                "delta": "",
+                "formatString": "",
+                "mode": "predetermined"
+            },
+            {
+                "symbolPosition": 334,
+                "type": "text",
+                "label": "displayed title",
+                "value": "",
+                "variant": true,
+                "tagOptions": "it:Reception,en:Reception",
+                "delta": "",
+                "formatString": "",
+                "mode": "options"
+            }
+        ],
+        "launchViewHTML": "<!DOCTYPE html>\n<html><head><link href=\"https:\/\/fonts.googleapis.com\/icon?family=Material+Icons\" rel=\"stylesheet\"\/><\/head>\n<body><p style=\"vertical-align:middle;font-size:2em;\" >\n<img style=\"vertical-align:middle;height:50px;\"\nsrc=\" \" \/>\n<i class=\"material-icons\" style=\"vertical-align:middle;font-size:50px;\"><span\/>room_service<\/i>\n \n<\/p><\/body><\/html>"
+    },
+    {
+        "appVersion": "1.10.4",
+        "compatibilityLevel": 10,
+        "code": "",
+        "listCode": "",
+        "queryCode": "",
+        "license": "Copyright MyQueries - All rights reserved",
+        "externalValuesUrl": "",
+        "title": "Andare in centro",
+        "tags": "",
+        "listTags": "",
+        "requestType": "url",
+        "query": "  http:\/\/maps.apple.com\/?dirflg= &daddr=\n https:\/\/www.google.com\/maps\/dir\/?api=1&origin= &travelmode= &destination=\n  \n https:\/\/www.google.com\/maps\/dir\/?api=1&origin= &travelmode= &destination=\n  ",
+        "parameters": [
+            {
+                "symbolPosition": 0,
+                "type": "directive",
+                "label": "",
+                "variant": true,
+                "condition": "ios",
+                "delta": "",
+                "formatString": "",
+                "mode": "if"
+            },
+            {
+                "symbolPosition": 1,
+                "type": "directive",
+                "label": "",
+                "condition": "amaps",
+                "delta": "",
+                "formatString": "",
+                "mode": "if"
+            },
+            {
+                "symbolPosition": 32,
+                "type": "text",
+                "label": "travel mode",
+                "value": "r",
+                "tagOptions": "transit:r ,walking:w ,bicycling:c ,driving: d",
+                "delta": "",
+                "formatString": "",
+                "mode": "options"
+            },
+            {
+                "symbolPosition": 41,
+                "type": "directive",
+                "label": "",
+                "condition": "amaps",
+                "delta": "",
+                "formatString": "",
+                "mode": "elseif"
+            },
+            {
+                "symbolPosition": 88,
+                "type": "location",
+                "label": "",
+                "delta": "",
+                "formatString": "DDD.DDDDD,EEE.EEEEE",
+                "mode": "variable"
+            },
+            {
+                "symbolPosition": 101,
+                "type": "text",
+                "label": "travel mode",
+                "value": "transit",
+                "tagOptions": "transit:transit,walking:walking,bicycling:bicycling,driving:driving",
+                "delta": "",
+                "formatString": "",
+                "mode": "options"
+            },
+            {
+                "symbolPosition": 116,
+                "type": "directive",
+                "label": "",
+                "condition": "amaps",
+                "delta": "",
+                "formatString": "",
+                "mode": "endif"
+            },
+            {
+                "symbolPosition": 117,
+                "type": "directive",
+                "label": "",
+                "condition": "gmaps",
+                "delta": "",
+                "formatString": "",
+                "mode": "endif"
+            },
+            {
+                "symbolPosition": 119,
+                "type": "directive",
+                "label": "",
+                "variant": true,
+                "condition": "ios",
+                "delta": "",
+                "formatString": "",
+                "mode": "elseif"
+            },
+            {
+                "symbolPosition": 166,
+                "type": "location",
+                "label": "",
+                "delta": "",
+                "formatString": "DDD.DDDDD,EEE.EEEEE",
+                "mode": "variable"
+            },
+            {
+                "symbolPosition": 179,
+                "type": "text",
+                "label": "travel mode",
+                "value": "transit",
+                "tagOptions": "transit:transit,walking:walking,bicycling:bicycling,driving:driving",
+                "delta": "",
+                "formatString": "",
+                "mode": "options"
+            },
+            {
+                "symbolPosition": 194,
+                "type": "directive",
+                "label": "",
+                "variant": true,
+                "condition": "ios",
+                "delta": "",
+                "formatString": "",
+                "mode": "endif"
+            },
+            {
+                "symbolPosition": 195,
+                "type": "text",
+                "label": "destination",
+                "value": "Via Rizzoli, BOLOGNA",
+                "delta": "",
+                "formatString": "",
+                "mode": "predetermined"
+            }
+        ],
+        "launchViewParameters": [
+            {
+                "symbolPosition": 232,
+                "type": "text",
+                "label": "image url",
+                "value": "https:\/\/cloud-1de12d.b-cdn.net\/media\/iW=180&iH=any\/41cc45f86e16a3d137d76d9d7823e181.png",
+                "delta": "",
+                "formatString": "",
+                "mode": "predetermined"
+            },
+            {
+                "symbolPosition": 311,
+                "type": "text",
+                "label": "travel mode",
+                "value": "directions_bus",
+                "tagOptions": "transit:directions_bus,walking:directions_walk,bicycling:directions_bike,driving:directions_car",
+                "delta": "",
+                "formatString": "",
+                "mode": "options"
+            },
+            {
+                "symbolPosition": 371,
+                "type": "text",
+                "label": "torri image url",
+                "value": "https:\/\/encrypted-tbn0.gstatic.com\/images?q=tbn:ANd9GcTzzsnWZ4yYmbl845Tet5QJjjwcN-0LvbmaGw&usqp=CAU",
+                "delta": "",
+                "formatString": "",
+                "mode": "predetermined"
+            },
+            {
+                "symbolPosition": 377,
+                "type": "text",
+                "label": "displayed title",
+                "value": "",
+                "variant": true,
+                "tagOptions": "it:Vai al centro,en:Downtown",
+                "delta": "",
+                "formatString": "",
+                "mode": "options"
+            }
+        ],
+        "launchViewHTML": "<!DOCTYPE html>\n<html><head><link href=\"https:\/\/fonts.googleapis.com\/icon?family=Material+Icons\" rel=\"stylesheet\"\/><\/head><body>\n<p style=\"vertical-align:middle;font-size:2em;\" >\n<img style=\"vertical-align:middle;height:50px;\"\nsrc=\" \" \/>\n<i class=\"material-icons\" style=\"vertical-align:middle;font-size:50px;\">\n \n<\/i>\n<img style=\"vertical-align:middle;height:50px;\"\nsrc=\" \" \/>\n \n<\/p><\/body><\/html>"
+    },
+    {
+        "appVersion": "1.10.4",
+        "compatibilityLevel": 9,
+        "code": "",
+        "listCode": "",
+        "queryCode": "",
+        "license": "Copyright MyQueries - All rights reserved",
+        "externalValuesUrl": "",
+        "title": "Cosa vedere",
+        "tags": "",
+        "listTags": "",
+        "requestType": "url",
+        "query": "     ",
+        "parameters": [
+            {
+                "symbolPosition": 0,
+                "type": "directive",
+                "label": "",
+                "variant": true,
+                "condition": "it",
+                "delta": "",
+                "formatString": "",
+                "mode": "if"
+            },
+            {
+                "symbolPosition": 1,
+                "type": "text",
+                "label": "surroundings page url it",
+                "value": "https:\/\/www.grandhotelelitebologna.it#dintorni",
+                "delta": "",
+                "formatString": "",
+                "mode": "predetermined"
+            },
+            {
+                "symbolPosition": 2,
+                "type": "directive",
+                "label": "",
+                "variant": true,
+                "condition": "it",
+                "delta": "",
+                "formatString": "",
+                "mode": "endif"
+            },
+            {
+                "symbolPosition": 3,
+                "type": "directive",
+                "label": "",
+                "variant": true,
+                "condition": "en",
+                "delta": "",
+                "formatString": "",
+                "mode": "if"
+            },
+            {
+                "symbolPosition": 4,
+                "type": "text",
+                "label": "surroundings page url en",
+                "value": "https:\/\/www.grandhotelelitebologna.it\/en-home#surroundings",
+                "delta": "",
+                "formatString": "",
+                "mode": "predetermined"
+            }
+        ],
+        "launchViewParameters": [
+            {
+                "symbolPosition": 233,
+                "type": "text",
+                "label": "logo image url",
+                "value": "https:\/\/cloud-1de12d.b-cdn.net\/media\/iW=180&iH=any\/41cc45f86e16a3d137d76d9d7823e181.png",
+                "delta": "",
+                "formatString": "",
+                "mode": "predetermined"
+            },
+            {
+                "symbolPosition": 293,
+                "type": "text",
+                "label": "image url",
+                "value": "https:\/\/www.myqueries.info\/demo\/images\/city_tour.jpg",
+                "delta": "",
+                "formatString": "",
+                "mode": "predetermined"
+            },
+            {
+                "symbolPosition": 299,
+                "type": "text",
+                "label": "displayed title",
+                "value": "",
+                "variant": true,
+                "tagOptions": "it:Cosa vedere,en:Visit Bologna",
+                "delta": "",
+                "formatString": "",
+                "mode": "options"
+            }
+        ],
+        "launchViewHTML": "<!DOCTYPE html>\n<html><head><link href=\"https:\/\/fonts.googleapis.com\/icon?family=Material+Icons\" rel=\"stylesheet\"\/><\/head><body>\n<p style=\"vertical-align:middle;font-size:2em;\" >\n<img style=\"vertical-align:middle;height:50px;\"\r\nsrc=\" \" \/>\n<img style=\"vertical-align:middle;height:50px;\"\r\nsrc=\" \" \/>\n \n<\/p><\/body><\/html>"
+    },
+    {
+        "appVersion": "1.10.4",
+        "compatibilityLevel": 4,
+        "code": "tuttobologna",
+        "listCode": "",
+        "queryCode": "",
+        "license": "Copyright MyQueries - All rights reserved",
+        "externalValuesUrl": "",
+        "title": "Tutto BOLOGNA",
+        "tags": "",
+        "listTags": "",
+        "requestType": "url",
+        "query": "https:\/\/www.myqueries.info\/demo\/tuttobologna.myq",
+        "parameters": [],
+        "launchViewParameters": [
+            {
+                "symbolPosition": 175,
+                "type": "text",
+                "label": "logo image url",
+                "value": "https:\/\/cloud-1de12d.b-cdn.net\/media\/iW=180&iH=any\/41cc45f86e16a3d137d76d9d7823e181.png",
+                "delta": "",
+                "formatString": "",
+                "mode": "predetermined"
+            },
+            {
+                "symbolPosition": 499,
+                "type": "text",
+                "label": "displayed title",
+                "value": "",
+                "variant": true,
+                "tagOptions": "it:Tutto Bologna,en:Tutto Bologna",
+                "delta": "",
+                "formatString": "",
+                "mode": "options"
+            },
+            {
+                "symbolPosition": 512,
+                "type": "text",
+                "label": "tortellino image url",
+                "value": "https:\/\/www.myqueries.info\/demo\/images\/tortellino.png",
+                "delta": "",
+                "formatString": "",
+                "mode": "predetermined"
+            },
+            {
+                "symbolPosition": 621,
+                "type": "text",
+                "label": "cappello image url",
+                "value": "https:\/\/www.myqueries.info\/demo\/images\/cappello_univ.png",
+                "delta": "",
+                "formatString": "",
+                "mode": "predetermined"
+            }
+        ],
+        "launchViewHTML": "<!DOCTYPE html>\n<html>\n<body>\n<div style=\"position: relative; display: flex; align-items: center; padding-top: 10px; border-radius: 10x; background-color: white;\"> \n<img src=\" \" alt=\"Icona delle Torri di Bologna\" style=\"height: 50px; margin-right: 36px;margin-left:-4px;\">\n<div style=\"position: relative; display: flex; align-items: center; background: linear-gradient(to right, red, blue); color: white; padding: 10px 20px; border-radius: 10px; font-family: 'Arial', sans-serif; font-size: 24px;\">\n  \n<img src=\" \" alt=\"Icona del tortellino\" style=\"position: absolute;bottom:-5px; left: -20px; height: 32px; \">\n<img src=\" \" alt=\"Icona del cappello universitario\" style=\"position: absolute;top: -25px; right: -20px; height: 48px; \">\n<\/div>\n<\/div>\n<\/body>\n<\/html>\n"
+    },
+    {
+        "appVersion": "1.10.4",
+        "compatibilityLevel": 9,
+        "code": "",
+        "listCode": "",
+        "queryCode": "",
+        "license": "Copyright MyQueries - All rights reserved",
+        "externalValuesUrl": "https:\/\/www.myqueries.info\/demo\/grand_hotel_elite_bologna\/config.yaml",
+        "title": "Prenota colazione",
+        "tags": "",
+        "listTags": "",
+        "requestType": "webview",
+        "query": "<DOCTYPE html>\n<html><head><link href=\"https:\/\/fonts.googleapis.com\/icon?family=Material+Icons\" rel=\"stylesheet\"\/><\/head>\n<body><p style=\"vertical-align:middle;font-size:1.5em;\" >\n <br>\n<myqueries-query>\n<script class=\"myqueries-query-json\" type=\"text\/json\">\n <\/script>\n<i class=\"material-icons\" style=\"vertical-align:middle;font-size:50px;\"><span\/>call\n<\/i>\n<\/myqueries-query>\n\n<myqueries-query>\n<script class=\"myqueries-query-json\" type=\"text\/json\">\n <\/script>\n<img style=\"vertical-align:middle;height:60px;\"\nsrc=\" \" \/>\n<\/myqueries-query>\n<myqueries-query>\n<script class=\"myqueries-query-json\" type=\"text\/json\">\n <\/script>\n<i class=\"material-icons\" style=\"vertical-align:middle;font-size:50px;\">email\n<\/i>\n<\/myqueries-query>\n<object style=\"width:100vw;max-height:100vh;height:100vh;\" data=\"     \"><\/object>\n<\/p>\n\n<\/body><\/html>\n\n",
+        "parameters": [
+            {
+                "symbolPosition": 180,
+                "type": "text",
+                "label": "title",
+                "value": "",
+                "variant": true,
+                "tagOptions": "it:Prenota colazione,en:Breakfast",
+                "delta": "",
+                "formatString": "",
+                "mode": "options"
+            },
+            {
+                "symbolPosition": 259,
+                "type": "query",
+                "label": "Query Chiamata telefonica",
+                "query": {
+                    "appVersion": "1.10.4",
+                    "compatibilityLevel": 10,
+                    "code": "",
+                    "listCode": "",
+                    "queryCode": "",
+                    "license": "Copyright MyQueries - All rights reserved",
+                    "externalValuesUrl": "https:\/\/www.myqueries.info\/demo\/grand_hotel_elite_bologna\/config.yaml",
+                    "title": "Chiama Grand Hotel Elite",
+                    "tags": "",
+                    "listTags": "",
+                    "requestType": "url",
+                    "query": "tel: ",
+                    "parameters": [
+                        {
+                            "symbolPosition": 4,
+                            "type": "text",
+                            "label": "Tel. Grand Hotel Elite",
+                            "key": "numero_telefono_hotel",
+                            "editable": false,
+                            "delta": "",
+                            "formatString": "",
+                            "mode": "global"
+                        }
+                    ],
+                    "launchViewParameters": [],
+                    "launchViewHTML": "<!DOCTYPE html>\n<html><head><link href=\"https:\/\/fonts.googleapis.com\/icon?family=Material+Icons\" rel=\"stylesheet\"\/><\/head><body>\n<p style=\"vertical-align:middle;font-size:2em;\" >\n<img style=\"vertical-align:middle;height:50px;\"\nsrc=\"https:\/\/cloud-1de12d.b-cdn.net\/media\/iW=180&iH=any\/41cc45f86e16a3d137d76d9d7823e181.png\" \/>\n<i class=\"material-icons\" style=\"vertical-align:middle;font-size:50px;\"><span\/>call\n<\/i>\nGrand Hotel Elite\n<\/p><\/body><\/html>"
+                },
+                "delta": "",
+                "formatString": "",
+                "mode": "json"
+            },
+            {
+                "symbolPosition": 452,
+                "type": "query",
+                "label": "Query Whatsapp",
+                "query": {
+                    "appVersion": "1.10.4",
+                    "compatibilityLevel": 10,
+                    "code": "",
+                    "listCode": "",
+                    "queryCode": "",
+                    "license": "Copyright MyQueries - All rights reserved",
+                    "externalValuesUrl": "https:\/\/www.myqueries.info\/demo\/grand_hotel_elite_bologna\/config.yaml",
+                    "title": "Whatsapp Grand Hotel Elite",
+                    "tags": "",
+                    "listTags": "",
+                    "requestType": "url",
+                    "query": "https:\/\/wa.me\/ ",
+                    "parameters": [
+                        {
+                            "symbolPosition": 14,
+                            "type": "text",
+                            "label": "Whatsapp Grand Hotel Elite",
+                            "key": "numero_whatsapp_hotel",
+                            "editable": false,
+                            "delta": "",
+                            "formatString": "",
+                            "mode": "global"
+                        }
+                    ],
+                    "launchViewParameters": [],
+                    "launchViewHTML": "<!DOCTYPE html>\n<html><head><link href=\"https:\/\/fonts.googleapis.com\/icon?family=Material+Icons\" rel=\"stylesheet\"\/><\/head><body>\n<p style=\"vertical-align:middle;font-size:2em;\" >\n<img style=\"vertical-align:middle;height:50px;\"\nsrc=\"https:\/\/cloud-1de12d.b-cdn.net\/media\/iW=180&iH=any\/41cc45f86e16a3d137d76d9d7823e181.png\" \/>\n<img style=\"vertical-align:middle;height:60px;\"\nsrc=\"https:\/\/www.myqueries.info\/demo\/grand_hotel_elite_bologna\/images\/whatsapp_icon.webp\" \/>\nGrand Hotel Elite\n<\/p><\/body><\/html>"
+                },
+                "delta": "",
+                "formatString": "",
+                "mode": "json"
+            },
+            {
+                "symbolPosition": 516,
+                "type": "text",
+                "label": "Whatsapp logo image url",
+                "value": "https:\/\/www.myqueries.info\/demo\/grand_hotel_elite_bologna\/images\/whatsapp_icon.webp",
+                "delta": "",
+                "formatString": "",
+                "mode": "predetermined"
+            },
+            {
+                "symbolPosition": 614,
+                "type": "query",
+                "label": "Query E-Mail",
+                "query": {
+                    "appVersion": "1.10.4",
+                    "compatibilityLevel": 10,
+                    "code": "",
+                    "listCode": "",
+                    "queryCode": "",
+                    "license": "Copyright MyQueries - All rights reserved",
+                    "externalValuesUrl": "https:\/\/www.myqueries.info\/demo\/grand_hotel_elite_bologna\/config.yaml",
+                    "title": "E-Mail Grand Hotel Elite",
+                    "tags": "",
+                    "listTags": "",
+                    "requestType": "url",
+                    "query": "mailto: ",
+                    "parameters": [
+                        {
+                            "symbolPosition": 7,
+                            "type": "text",
+                            "label": "E-mail Grand Hotel Elite",
+                            "key": "indirizzo_email_hotel",
+                            "editable": false,
+                            "delta": "",
+                            "formatString": "",
+                            "mode": "global"
+                        }
+                    ],
+                    "launchViewParameters": [],
+                    "launchViewHTML": "<!DOCTYPE html>\n<html><head><link href=\"https:\/\/fonts.googleapis.com\/icon?family=Material+Icons\" rel=\"stylesheet\"\/><\/head><body>\n<p style=\"vertical-align:middle;font-size:2em;\" >\n<img style=\"vertical-align:middle;height:50px;\"\nsrc=\"https:\/\/cloud-1de12d.b-cdn.net\/media\/iW=180&iH=any\/41cc45f86e16a3d137d76d9d7823e181.png\" \/>\n<i class=\"material-icons\" style=\"vertical-align:middle;font-size:50px;\"><span\/>email\n<\/i>\nGrand Hotel Elite\n<\/p><\/body><\/html>"
+                },
+                "delta": "",
+                "formatString": "",
+                "mode": "json"
+            },
+            {
+                "symbolPosition": 792,
+                "type": "directive",
+                "label": "",
+                "variant": true,
+                "condition": "it",
+                "delta": "",
+                "formatString": "",
+                "mode": "if"
+            },
+            {
+                "symbolPosition": 793,
+                "type": "text",
+                "label": "breakfast page url it",
+                "value": "https:\/\/www.grandhotelelitebologna.it\/#servizi",
+                "delta": "",
+                "formatString": "",
+                "mode": "predetermined"
+            },
+            {
+                "symbolPosition": 794,
+                "type": "directive",
+                "label": "",
+                "variant": true,
+                "condition": "it",
+                "delta": "",
+                "formatString": "",
+                "mode": "endif"
+            },
+            {
+                "symbolPosition": 795,
+                "type": "directive",
+                "label": "",
+                "variant": true,
+                "condition": "en",
+                "delta": "",
+                "formatString": "",
+                "mode": "if"
+            },
+            {
+                "symbolPosition": 796,
+                "type": "text",
+                "label": "breakfast page url en",
+                "value": "https:\/\/www.grandhotelelitebologna.it\/en-home#services",
+                "delta": "",
+                "formatString": "",
+                "mode": "predetermined"
+            }
+        ],
+        "launchViewParameters": [
+            {
+                "symbolPosition": 235,
+                "type": "text",
+                "label": "hotel logo",
+                "value": "https:\/\/cloud-1de12d.b-cdn.net\/media\/iW=180&iH=any\/41cc45f86e16a3d137d76d9d7823e181.png",
+                "delta": "",
+                "formatString": "",
+                "mode": "predetermined"
+            },
+            {
+                "symbolPosition": 527,
+                "type": "text",
+                "label": "displayed title",
+                "value": "",
+                "variant": true,
+                "tagOptions": "it:Prenota,en:Breakfast",
+                "delta": "",
+                "formatString": "",
+                "mode": "options"
+            }
+        ],
+        "launchViewHTML": "<!DOCTYPE html>\n<html><head>\n<link href=\"https:\/\/fonts.googleapis.com\/icon?family=Material+Icons\" rel=\"stylesheet\"\/>\n\n<\/head>\n<body><p style=\"vertical-align:middle;font-size:2em;\" >\n<img style=\"vertical-align:middle;height:50px;\"\nsrc=\" \" \/>\n<i class=\"material-icons\" style=\"vertical-align:middle;font-size:50px;\"><span\/>bakery_dining<\/i>\n<i class=\"material-icons\" style=\"vertical-align:middle;font-size:50px;\"><span\/>egg_alt<\/i>\n<i class=\"material-icons\" style=\"vertical-align:middle;font-size:50px;\"><span\/>free_breakfast<\/i>\n \n<\/p><\/body><\/html>"
+    },
+    {
+        "appVersion": "1.10.4",
+        "compatibilityLevel": 9,
+        "code": "",
+        "listCode": "",
+        "queryCode": "",
+        "license": "Copyright MyQueries - All rights reserved",
+        "externalValuesUrl": "",
+        "title": "Stai più giorni",
+        "tags": "",
+        "listTags": "",
+        "requestType": "url",
+        "query": "     ",
+        "parameters": [
+            {
+                "symbolPosition": 0,
+                "type": "directive",
+                "label": "",
+                "variant": true,
+                "condition": "it",
+                "delta": "",
+                "formatString": "",
+                "mode": "if"
+            },
+            {
+                "symbolPosition": 1,
+                "type": "text",
+                "label": "",
+                "value": "https:\/\/be.bookingexpert.it\/book\/home\/single?layout=10018756&lang=it&currency=EUR&nsid=037b6daf-68fc-4c6c-8666-5a9126dadaed",
+                "delta": "",
+                "formatString": "",
+                "mode": "predetermined"
+            },
+            {
+                "symbolPosition": 2,
+                "type": "directive",
+                "label": "",
+                "variant": true,
+                "condition": "it",
+                "delta": "",
+                "formatString": "",
+                "mode": "endif"
+            },
+            {
+                "symbolPosition": 3,
+                "type": "directive",
+                "label": "",
+                "variant": true,
+                "condition": "en",
+                "delta": "",
+                "formatString": "",
+                "mode": "if"
+            },
+            {
+                "symbolPosition": 4,
+                "type": "text",
+                "label": "",
+                "value": "https:\/\/be.bookingexpert.it\/book\/home\/single?layout=10018756&lang=en&currency=EUR&nsid=037b6daf-68fc-4c6c-8666-5a9126dadaed",
+                "delta": "",
+                "formatString": "",
+                "mode": "predetermined"
+            }
+        ],
+        "launchViewParameters": [
+            {
+                "symbolPosition": 232,
+                "type": "text",
+                "label": "hotel logo",
+                "value": "https:\/\/cloud-1de12d.b-cdn.net\/media\/iW=180&iH=any\/41cc45f86e16a3d137d76d9d7823e181.png",
+                "delta": "",
+                "formatString": "",
+                "mode": "predetermined"
+            },
+            {
+                "symbolPosition": 325,
+                "type": "text",
+                "label": "displayed title",
+                "value": "",
+                "variant": true,
+                "tagOptions": "it:Stai più giorni,en:Extend stay",
+                "delta": "",
+                "formatString": "",
+                "mode": "options"
+            }
+        ],
+        "launchViewHTML": "<!DOCTYPE html>\n<html><head><link href=\"https:\/\/fonts.googleapis.com\/icon?family=Material+Icons\" rel=\"stylesheet\"\/><\/head>\n<body><p style=\"vertical-align:middle;font-size:2em;\" >\n<img style=\"vertical-align:middle;height:50px;\"\nsrc=\" \" \/>\n<i class=\"material-icons\" style=\"vertical-align:middle;font-size:50px;\">date_range<\/i>\n \n<\/p><\/body><\/html>"
+    },
+    {
+        "appVersion": "1.10.4",
+        "compatibilityLevel": 9,
+        "code": "",
+        "listCode": "",
+        "queryCode": "",
+        "license": "Copyright MyQueries - All rights reserved",
+        "externalValuesUrl": "",
+        "title": "Free wi-fi",
+        "tags": "",
+        "listTags": "",
+        "requestType": "webview",
+        "query": "",
+        "parameters": [],
+        "launchViewParameters": [
+            {
+                "symbolPosition": 233,
+                "type": "text",
+                "label": "logo image url",
+                "value": "https:\/\/cloud-1de12d.b-cdn.net\/media\/iW=180&iH=any\/41cc45f86e16a3d137d76d9d7823e181.png",
+                "delta": "",
+                "formatString": "",
+                "mode": "predetermined"
+            },
+            {
+                "symbolPosition": 328,
+                "type": "text",
+                "label": "displayed title",
+                "value": "",
+                "variant": true,
+                "tagOptions": "it:Free Wi-Fi,en:Free Wi-Fi",
+                "delta": "",
+                "formatString": "",
+                "mode": "options"
+            }
+        ],
+        "launchViewHTML": "<!DOCTYPE html>\n<html><head><link href=\"https:\/\/fonts.googleapis.com\/icon?family=Material+Icons\" rel=\"stylesheet\"\/><\/head><body>\n<p style=\"vertical-align:middle;font-size:2em;\" >\n<img style=\"vertical-align:middle;height:50px;\"\r\nsrc=\" \" \/>\n\n<i class=\"material-icons\" style=\"vertical-align:middle;font-size:50px;\"><span\/>wifi<\/i>\n \n<\/p><\/body><\/html>"
+    },
+    {
+        "appVersion": "1.10.4",
+        "compatibilityLevel": 10,
+        "code": "",
+        "listCode": "",
+        "queryCode": "",
+        "license": "Copyright MyQueries - All rights reserved",
+        "externalValuesUrl": "",
+        "title": "Entrata Garage",
+        "tags": "",
+        "listTags": "",
+        "requestType": "url",
+        "query": "  http:\/\/maps.apple.com\/?dirflg= &daddr=\n https:\/\/www.google.com\/maps\/dir\/?api=1&origin= &travelmode= &destination=\n  \n https:\/\/www.google.com\/maps\/dir\/?api=1&origin= &travelmode= &destination=\n  ",
+        "parameters": [
+            {
+                "symbolPosition": 0,
+                "type": "directive",
+                "label": "",
+                "variant": true,
+                "condition": "ios",
+                "delta": "",
+                "formatString": "",
+                "mode": "if"
+            },
+            {
+                "symbolPosition": 1,
+                "type": "directive",
+                "label": "",
+                "condition": "amaps",
+                "delta": "",
+                "formatString": "",
+                "mode": "if"
+            },
+            {
+                "symbolPosition": 32,
+                "type": "text",
+                "label": "travel mode",
+                "value": "r",
+                "tagOptions": "transit:r ,walking:w ,bicycling:c ,driving: d",
+                "delta": "",
+                "formatString": "",
+                "mode": "options"
+            },
+            {
+                "symbolPosition": 41,
+                "type": "directive",
+                "label": "",
+                "condition": "amaps",
+                "delta": "",
+                "formatString": "",
+                "mode": "elseif"
+            },
+            {
+                "symbolPosition": 88,
+                "type": "location",
+                "label": "",
+                "delta": "",
+                "formatString": "DDD.DDDDD,EEE.EEEEE",
+                "mode": "variable"
+            },
+            {
+                "symbolPosition": 101,
+                "type": "text",
+                "label": "travel mode",
+                "value": "transit",
+                "tagOptions": "transit:transit,walking:walking,bicycling:bicycling,driving:driving",
+                "delta": "",
+                "formatString": "",
+                "mode": "options"
+            },
+            {
+                "symbolPosition": 116,
+                "type": "directive",
+                "label": "",
+                "condition": "amaps",
+                "delta": "",
+                "formatString": "",
+                "mode": "endif"
+            },
+            {
+                "symbolPosition": 117,
+                "type": "directive",
+                "label": "",
+                "condition": "gmaps",
+                "delta": "",
+                "formatString": "",
+                "mode": "endif"
+            },
+            {
+                "symbolPosition": 119,
+                "type": "directive",
+                "label": "",
+                "variant": true,
+                "condition": "ios",
+                "delta": "",
+                "formatString": "",
+                "mode": "elseif"
+            },
+            {
+                "symbolPosition": 166,
+                "type": "location",
+                "label": "",
+                "delta": "",
+                "formatString": "DDD.DDDDD,EEE.EEEEE",
+                "mode": "variable"
+            },
+            {
+                "symbolPosition": 179,
+                "type": "text",
+                "label": "travel mode",
+                "value": "transit",
+                "tagOptions": "transit:transit,walking:walking,bicycling:bicycling,driving:driving",
+                "delta": "",
+                "formatString": "",
+                "mode": "options"
+            },
+            {
+                "symbolPosition": 194,
+                "type": "directive",
+                "label": "",
+                "variant": true,
+                "condition": "ios",
+                "delta": "",
+                "formatString": "",
+                "mode": "endif"
+            },
+            {
+                "symbolPosition": 195,
+                "type": "text",
+                "label": "destination",
+                "value": "Garage via Podgora - BOLOGNA",
+                "delta": "",
+                "formatString": "",
+                "mode": "predetermined"
+            }
+        ],
+        "launchViewParameters": [
+            {
+                "symbolPosition": 232,
+                "type": "text",
+                "label": "image url",
+                "value": "https:\/\/cloud-1de12d.b-cdn.net\/media\/iW=180&iH=any\/41cc45f86e16a3d137d76d9d7823e181.png",
+                "delta": "",
+                "formatString": "",
+                "mode": "predetermined"
+            },
+            {
+                "symbolPosition": 325,
+                "type": "text",
+                "label": "displayed title",
+                "value": "",
+                "variant": true,
+                "tagOptions": "it:Entrata garage,en:Garage entry",
+                "delta": "",
+                "formatString": "",
+                "mode": "options"
+            }
+        ],
+        "launchViewHTML": "<!DOCTYPE html>\n<html><head><link href=\"https:\/\/fonts.googleapis.com\/icon?family=Material+Icons\" rel=\"stylesheet\"\/><\/head><body>\n<p style=\"vertical-align:middle;font-size:2em;\" >\n<img style=\"vertical-align:middle;height:50px;\"\nsrc=\" \" \/>\n\n<i class=\"material-icons\" style=\"vertical-align:middle;font-size:50px;\">\n garage\n<\/i>\n \n<\/p><\/body><\/html>"
+    },
+    {
+        "appVersion": "1.10.4",
+        "compatibilityLevel": 9,
+        "code": "",
+        "listCode": "",
+        "queryCode": "",
+        "license": "Copyright MyQueries - All rights reserved",
+        "externalValuesUrl": "",
+        "title": "Taxi",
+        "tags": "",
+        "listTags": "",
+        "requestType": "search",
+        "query": "taxi",
+        "parameters": [],
+        "launchViewParameters": [
+            {
+                "symbolPosition": 233,
+                "type": "text",
+                "label": "logo image url",
+                "value": "https:\/\/cloud-1de12d.b-cdn.net\/media\/iW=180&iH=any\/41cc45f86e16a3d137d76d9d7823e181.png",
+                "delta": "",
+                "formatString": "",
+                "mode": "predetermined"
+            },
+            {
+                "symbolPosition": 335,
+                "type": "text",
+                "label": "displayed title",
+                "value": "",
+                "variant": true,
+                "tagOptions": "it:Taxi,en:Taxi",
+                "delta": "",
+                "formatString": "",
+                "mode": "options"
+            }
+        ],
+        "launchViewHTML": "<!DOCTYPE html>\n<html><head><link href=\"https:\/\/fonts.googleapis.com\/icon?family=Material+Icons\" rel=\"stylesheet\"\/><\/head><body>\n<p style=\"vertical-align:middle;font-size:2em;\" >\n<img style=\"vertical-align:middle;height:50px;\"\r\nsrc=\" \" \/>\n\n<i class=\"material-icons\" style=\"vertical-align:middle;font-size:50px;\"><span\/>local_taxi\n<\/i>\n \n<\/p><\/body><\/html>"
+    },
+    {
+        "appVersion": "1.10.4",
+        "compatibilityLevel": 9,
+        "code": "",
+        "listCode": "",
+        "queryCode": "",
+        "license": "Copyright MyQueries - All rights reserved",
+        "externalValuesUrl": "https:\/\/www.myqueries.info\/demo\/grand_hotel_elite_bologna\/config.yaml",
+        "title": "Contatti",
+        "tags": "",
+        "listTags": "",
+        "requestType": "webview",
+        "query": "<DOCTYPE html>\n<html><head><link href=\"https:\/\/fonts.googleapis.com\/icon?family=Material+Icons\" rel=\"stylesheet\"\/><\/head>\n<body><p style=\"vertical-align:middle;font-size:1.5em;\" >\n<br>\n <br><br>\n<myqueries-query>\n<script class=\"myqueries-query-json\" type=\"text\/json\">\n <\/script>\n<i class=\"material-icons\" style=\"vertical-align:middle;font-size:50px;\"><span\/>call\n<\/i>\n<\/myqueries-query>\n\n<myqueries-query>\n<script class=\"myqueries-query-json\" type=\"text\/json\">\n <\/script>\n<img style=\"vertical-align:middle;height:60px;\"\nsrc=\" \" \/>\n<\/myqueries-query>\n<myqueries-query>\n<script class=\"myqueries-query-json\" type=\"text\/json\">\n <\/script>\n<i class=\"material-icons\" style=\"vertical-align:middle;font-size:50px;\">email\n<\/i>\n<\/myqueries-query>\n\n<\/p><\/body><\/html>\n\n",
+        "parameters": [
+            {
+                "symbolPosition": 185,
+                "type": "text",
+                "label": "title",
+                "value": "",
+                "variant": true,
+                "tagOptions": "it:Contattaci,en:Contacts",
+                "delta": "",
+                "formatString": "",
+                "mode": "options"
+            },
+            {
+                "symbolPosition": 268,
+                "type": "query",
+                "label": "Query Chiamata telefonica",
+                "query": {
+                    "appVersion": "1.10.4",
+                    "compatibilityLevel": 10,
+                    "code": "",
+                    "listCode": "",
+                    "queryCode": "",
+                    "license": "Copyright MyQueries - All rights reserved",
+                    "externalValuesUrl": "https:\/\/www.myqueries.info\/demo\/grand_hotel_elite_bologna\/config.yaml",
+                    "title": "Chiama Grand Hotel Elite",
+                    "tags": "",
+                    "listTags": "",
+                    "requestType": "url",
+                    "query": "tel: ",
+                    "parameters": [
+                        {
+                            "symbolPosition": 4,
+                            "type": "text",
+                            "label": "Tel. Grand Hotel Elite",
+                            "key": "numero_telefono_hotel",
+                            "editable": false,
+                            "delta": "",
+                            "formatString": "",
+                            "mode": "global"
+                        }
+                    ],
+                    "launchViewParameters": [],
+                    "launchViewHTML": "<!DOCTYPE html>\n<html><head><link href=\"https:\/\/fonts.googleapis.com\/icon?family=Material+Icons\" rel=\"stylesheet\"\/><\/head><body>\n<p style=\"vertical-align:middle;font-size:2em;\" >\n<img style=\"vertical-align:middle;height:50px;\"\nsrc=\"https:\/\/cloud-1de12d.b-cdn.net\/media\/iW=180&iH=any\/41cc45f86e16a3d137d76d9d7823e181.png\" \/>\n<i class=\"material-icons\" style=\"vertical-align:middle;font-size:50px;\"><span\/>call\n<\/i>\nGrand Hotel Elite\n<\/p><\/body><\/html>"
+                },
+                "delta": "",
+                "formatString": "",
+                "mode": "json"
+            },
+            {
+                "symbolPosition": 461,
+                "type": "query",
+                "label": "Query Whatsapp",
+                "query": {
+                    "appVersion": "1.10.4",
+                    "compatibilityLevel": 10,
+                    "code": "",
+                    "listCode": "",
+                    "queryCode": "",
+                    "license": "Copyright MyQueries - All rights reserved",
+                    "externalValuesUrl": "https:\/\/www.myqueries.info\/demo\/grand_hotel_elite_bologna\/config.yaml",
+                    "title": "Whatsapp Grand Hotel Elite",
+                    "tags": "",
+                    "listTags": "",
+                    "requestType": "url",
+                    "query": "https:\/\/wa.me\/ ",
+                    "parameters": [
+                        {
+                            "symbolPosition": 14,
+                            "type": "text",
+                            "label": "Whatsapp Grand Hotel Elite",
+                            "key": "numero_whatsapp_hotel",
+                            "editable": false,
+                            "delta": "",
+                            "formatString": "",
+                            "mode": "global"
+                        }
+                    ],
+                    "launchViewParameters": [],
+                    "launchViewHTML": "<!DOCTYPE html>\n<html><head><link href=\"https:\/\/fonts.googleapis.com\/icon?family=Material+Icons\" rel=\"stylesheet\"\/><\/head><body>\n<p style=\"vertical-align:middle;font-size:2em;\" >\n<img style=\"vertical-align:middle;height:50px;\"\nsrc=\"https:\/\/cloud-1de12d.b-cdn.net\/media\/iW=180&iH=any\/41cc45f86e16a3d137d76d9d7823e181.png\" \/>\n<img style=\"vertical-align:middle;height:60px;\"\nsrc=\"https:\/\/www.myqueries.info\/demo\/grand_hotel_elite_bologna\/images\/whatsapp_icon.webp\" \/>\nGrand Hotel Elite\n<\/p><\/body><\/html>"
+                },
+                "delta": "",
+                "formatString": "",
+                "mode": "json"
+            },
+            {
+                "symbolPosition": 525,
+                "type": "text",
+                "label": "Whatsapp logo image url",
+                "value": "https:\/\/www.myqueries.info\/demo\/grand_hotel_elite_bologna\/images\/whatsapp_icon.webp",
+                "delta": "",
+                "formatString": "",
+                "mode": "predetermined"
+            },
+            {
+                "symbolPosition": 623,
+                "type": "query",
+                "label": "Query E-Mail",
+                "query": {
+                    "appVersion": "1.10.4",
+                    "compatibilityLevel": 10,
+                    "code": "",
+                    "listCode": "",
+                    "queryCode": "",
+                    "license": "Copyright MyQueries - All rights reserved",
+                    "externalValuesUrl": "https:\/\/www.myqueries.info\/demo\/grand_hotel_elite_bologna\/config.yaml",
+                    "title": "E-Mail Grand Hotel Elite",
+                    "tags": "",
+                    "listTags": "",
+                    "requestType": "url",
+                    "query": "mailto: ",
+                    "parameters": [
+                        {
+                            "symbolPosition": 7,
+                            "type": "text",
+                            "label": "E-mail Grand Hotel Elite",
+                            "key": "indirizzo_email_hotel",
+                            "editable": false,
+                            "delta": "",
+                            "formatString": "",
+                            "mode": "global"
+                        }
+                    ],
+                    "launchViewParameters": [],
+                    "launchViewHTML": "<!DOCTYPE html>\n<html><head><link href=\"https:\/\/fonts.googleapis.com\/icon?family=Material+Icons\" rel=\"stylesheet\"\/><\/head><body>\n<p style=\"vertical-align:middle;font-size:2em;\" >\n<img style=\"vertical-align:middle;height:50px;\"\nsrc=\"https:\/\/cloud-1de12d.b-cdn.net\/media\/iW=180&iH=any\/41cc45f86e16a3d137d76d9d7823e181.png\" \/>\n<i class=\"material-icons\" style=\"vertical-align:middle;font-size:50px;\"><span\/>email\n<\/i>\nGrand Hotel Elite\n<\/p><\/body><\/html>"
+                },
+                "delta": "",
+                "formatString": "",
+                "mode": "json"
+            }
+        ],
+        "launchViewParameters": [
+            {
+                "symbolPosition": 232,
+                "type": "text",
+                "label": "hotel logo",
+                "value": "https:\/\/cloud-1de12d.b-cdn.net\/media\/iW=180&iH=any\/41cc45f86e16a3d137d76d9d7823e181.png",
+                "delta": "",
+                "formatString": "",
+                "mode": "predetermined"
+            },
+            {
+                "symbolPosition": 380,
+                "type": "text",
+                "label": "Whatsapp logo image url",
+                "value": "https:\/\/www.myqueries.info\/demo\/grand_hotel_elite_bologna\/images\/whatsapp_icon.webp",
+                "delta": "",
+                "formatString": "",
+                "mode": "predetermined"
+            },
+            {
+                "symbolPosition": 475,
+                "type": "text",
+                "label": "displayed title",
+                "value": "",
+                "variant": true,
+                "tagOptions": "it:Contatti,en:Contacts",
+                "delta": "",
+                "formatString": "",
+                "mode": "options"
+            }
+        ],
+        "launchViewHTML": "<!DOCTYPE html>\n<html><head><link href=\"https:\/\/fonts.googleapis.com\/icon?family=Material+Icons\" rel=\"stylesheet\"\/><\/head>\n<body><p style=\"vertical-align:middle;font-size:2em;\" >\n<img style=\"vertical-align:middle;height:50px;\"\nsrc=\" \" \/>\n<i class=\"material-icons\" style=\"vertical-align:middle;font-size:50px;\"><span\/>call\n<\/i>\n<img style=\"vertical-align:middle;height:60px;\"\nsrc=\" \" \/>\n<i class=\"material-icons\" style=\"vertical-align:middle;font-size:50px;\"><span\/>email<\/i>\n \n<\/p><\/body><\/html>"
+    },
+    {
+        "appVersion": "1.10.4",
+        "compatibilityLevel": 9,
+        "code": "",
+        "listCode": "",
+        "queryCode": "",
+        "license": "Copyright MyQueries - All rights reserved",
+        "externalValuesUrl": "https:\/\/www.myqueries.info\/demo\/grand_hotel_elite_bologna\/config.yaml",
+        "title": "Passaparola",
+        "tags": "",
+        "listTags": "",
+        "requestType": "webview",
+        "query": "<!DOCTYPE html>\n<html>\n\n<head>\n    <title>\n       Share\n    <\/title>\n<\/head>\n\n<body style=\"text-align: center;\">\n    <h1> <\/h1>\n<h2> \n    <\/h2>\n\n    <button id=\"shareBtn\"> <\/button>\n\n    <script>\n        document.querySelector('#shareBtn')\n        .addEventListener('click', event => {\n\n           \n            if (navigator.share) {\n                navigator.share({\n\n                 \n                    title: 'Grand Hotel Elite',\n\n                   \n                    url: 'https:\/\/www.grandhotelelitebologna.it'\n                }).then(() => {\n                    console.log('Thanks for sharing!');\n                }).catch(err => {\n\n                   \n                    console.log(\n                    \"Error while using Web share API:\");\n                    console.log(err);\n                });\n            } else {\n\n                alert(\"Browser doesn't support this API !\");\n            }\n        })\n    <\/script>\n<\/body>\n\n<\/html>\n",
+        "parameters": [
+            {
+                "symbolPosition": 121,
+                "type": "text",
+                "label": "title",
+                "value": "",
+                "variant": true,
+                "tagOptions": "it:Condividi,en:Share",
+                "delta": "",
+                "formatString": "",
+                "mode": "options"
+            },
+            {
+                "symbolPosition": 132,
+                "type": "text",
+                "label": "hotel name",
+                "value": "Grand Hotel Elite",
+                "delta": "",
+                "formatString": "",
+                "mode": "predetermined"
+            },
+            {
+                "symbolPosition": 171,
+                "type": "text",
+                "label": "button text",
+                "value": "it:Condividi,en:Share",
+                "variant": true,
+                "tagOptions": "",
+                "delta": "",
+                "formatString": "",
+                "mode": "options"
+            }
+        ],
+        "launchViewParameters": [
+            {
+                "symbolPosition": 232,
+                "type": "text",
+                "label": "logo image url",
+                "value": "https:\/\/cloud-1de12d.b-cdn.net\/media\/iW=180&iH=any\/41cc45f86e16a3d137d76d9d7823e181.png",
+                "delta": "",
+                "formatString": "",
+                "mode": "predetermined"
+            },
+            {
+                "symbolPosition": 328,
+                "type": "text",
+                "label": "displayed title",
+                "value": "",
+                "variant": true,
+                "tagOptions": "it:Passaparola,en:Share",
+                "delta": "",
+                "formatString": "",
+                "mode": "options"
+            }
+        ],
+        "launchViewHTML": "<!DOCTYPE html>\n<html><head><link href=\"https:\/\/fonts.googleapis.com\/icon?family=Material+Icons\" rel=\"stylesheet\"\/><\/head><body>\n<p style=\"vertical-align:middle;font-size:2em;\" >\n<img style=\"vertical-align:middle;height:50px;\"\nsrc=\" \" \/>\n\n<i class=\"material-icons\" style=\"vertical-align:middle;font-size:50px;\"><span\/>share<\/i>\n \n<i class=\"material-icons\" style=\"vertical-align:middle;font-size:50px;\"><span\/>group_add\n<\/i>\n<\/p><\/body><\/html>"
+    },
+    {
+        "appVersion": "1.10.4",
+        "compatibilityLevel": 9,
+        "code": "",
+        "listCode": "",
+        "queryCode": "",
+        "license": "Copyright MyQueries - All rights reserved",
+        "externalValuesUrl": "",
+        "title": "Emergenza",
+        "tags": "",
+        "listTags": "",
+        "requestType": "webview",
+        "query": "<!DOCTYPE html>\n<html><head><link href=\"https:\/\/fonts.googleapis.com\/icon?family=Material+Icons\" rel=\"stylesheet\"\/><\/head><body>\n<p style=\"vertical-align:middle;font-size:2em;\" >\n <br><br>\n<img style=\"vertical-align:middle;width:100vw;\"\r\nsrc=\" \" \/>\n<br><br>\n<img style=\"vertical-align:middle;width:100vw;\"\r\nsrc=\" \" \/>\n \n\n<\/p><\/body><\/html>",
+        "parameters": [
+            {
+                "symbolPosition": 179,
+                "type": "text",
+                "label": "text",
+                "value": "",
+                "variant": true,
+                "tagOptions": "it:In caso di emergenza seguire ordinatamente  i simboli indicanti la direzione di sicurezza e raccogliersi al punto indicato!,en:In case of emergency please ordinately follow the direction signs and gather at the indicated place!",
+                "delta": "",
+                "formatString": "",
+                "mode": "options"
+            },
+            {
+                "symbolPosition": 243,
+                "type": "text",
+                "label": "emergency exit image url",
+                "value": "https:\/\/www.myqueries.info\/demo\/grand_hotel_elite_bologna\/images\/emergency_exit.jpg",
+                "delta": "",
+                "formatString": "",
+                "mode": "predetermined"
+            },
+            {
+                "symbolPosition": 312,
+                "type": "text",
+                "label": "assembly point image url",
+                "value": "https:\/\/www.myqueries.info\/demo\/grand_hotel_elite_bologna\/images\/assembly_point.jpg",
+                "delta": "",
+                "formatString": "",
+                "mode": "predetermined"
+            }
+        ],
+        "launchViewParameters": [
+            {
+                "symbolPosition": 233,
+                "type": "text",
+                "label": "logo image url",
+                "value": "https:\/\/cloud-1de12d.b-cdn.net\/media\/iW=180&iH=any\/41cc45f86e16a3d137d76d9d7823e181.png",
+                "delta": "",
+                "formatString": "",
+                "mode": "predetermined"
+            },
+            {
+                "symbolPosition": 293,
+                "type": "text",
+                "label": "assembly point image url",
+                "value": "https:\/\/www.myqueries.info\/demo\/grand_hotel_elite_bologna\/images\/assembly_point.jpg",
+                "delta": "",
+                "formatString": "",
+                "mode": "predetermined"
+            },
+            {
+                "symbolPosition": 299,
+                "type": "text",
+                "label": "displayed title",
+                "value": "",
+                "variant": true,
+                "tagOptions": "it:Emergenza,en:Emergency",
+                "delta": "",
+                "formatString": "",
+                "mode": "options"
+            }
+        ],
+        "launchViewHTML": "<!DOCTYPE html>\n<html><head><link href=\"https:\/\/fonts.googleapis.com\/icon?family=Material+Icons\" rel=\"stylesheet\"\/><\/head><body>\n<p style=\"vertical-align:middle;font-size:2em;\" >\n<img style=\"vertical-align:middle;height:50px;\"\r\nsrc=\" \" \/>\n<img style=\"vertical-align:middle;height:50px;\"\r\nsrc=\" \" \/>\n \n<\/p><\/body><\/html>"
+    }
+]
