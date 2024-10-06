@@ -6,7 +6,7 @@
         "listCode": "",
         "queryCode": "",
         "license": "Copyright MyQueries - All rights reserved",
-        "externalValuesUrl": "https:\/\/www.myqueries.info\/demo\/grand_hotel_elite_bologna\/config.yaml",
+        "externalValuesUrl": "https:\/\/p5music.github.io\/repository_prova\/grand_hotel_elite_bologna\/config.yaml",
         "title": "Grand Hotel Elite",
         "tags": "",
         "listTags": "",
@@ -18,7 +18,7 @@
                 "symbolPosition": 0,
                 "type": "text",
                 "label": "list url",
-                "value": "https:\/\/www.myqueries.info\/demo\/grand_hotel_elite_bologna\/grand_hotel_elite_bologna.myq",
+                "value": "https:\/\/p5music.github.io\/repository_prova\/grand_hotel_elite_bologna\/grand_hotel_elite_bologna.myq",
                 "delta": "",
                 "formatString": "",
                 "mode": "predetermined"
