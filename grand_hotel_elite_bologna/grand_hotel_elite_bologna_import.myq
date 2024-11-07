@@ -11,11 +11,11 @@
         "tags": "",
         "listTags": "",
         "requestType": "url",
-        "query": " ",
+        "query": "url_param",
         "parameters": [
             
             {
-                "symbolPosition": 0,
+                "placeHolder": "url_param",
                 "type": "text",
                 "label": "list url",
                 "value": "https:\/\/p5music.github.io\/repository_prova\/grand_hotel_elite_bologna\/grand_hotel_elite_bologna.myq",
@@ -27,7 +27,7 @@
         ],
         "launchViewParameters": [
             {
-                "symbolPosition": 174,
+                "placeHolder": "img_url_param",
                 "type": "text",
                 "label": "image url",
                 "value": "https:\/\/cloud-1de12d.b-cdn.net\/media\/original\/d9e7dfeeb7c7dc1134cdee48818cc89e\/image_123650291.svg",
@@ -36,5 +36,5 @@
                 "mode": "predetermined"
             }
         ],
-        "launchViewHTML": "<!DOCTYPE html>\n<html><head><\/head><body>\n<img class=\"center\"\nsrc=\" \">\n<\/img><\/body><\/html>"
+        "launchViewHTML": "<!DOCTYPE html>\n<html><head><\/head><body>\n<img class=\"center\"\nsrc=\"img_url_param\">\n<\/img><\/body><\/html>"
     }]
