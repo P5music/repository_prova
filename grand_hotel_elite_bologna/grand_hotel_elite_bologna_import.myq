@@ -36,5 +36,5 @@
                 "mode": "predetermined"
             }
         ],
-        "launchViewHTML": "<!DOCTYPE html>\n<html><head><\/head><body>\n<img style=\"width:80%;\" class=\"center\"\nsrc=\" \">\n<\/img><\/body><\/html>"
+        "launchViewHTML": "<!DOCTYPE html>\n<html><head><\/head><body>\n<img style='width:80%;' class=\"center\"\nsrc=\" \">\n<\/img><\/body><\/html>"
     }]
