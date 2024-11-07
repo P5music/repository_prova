@@ -36,5 +36,5 @@
                 "mode": "predetermined"
             }
         ],
-        "launchViewHTML": "<!DOCTYPE html>\n<html><head>\n<style>\n.center {\n  display: block;\n  margin-left: auto;\n  margin-right: auto;\n  width: 50%;\n\n}\n<\/style>\n\n<\/head><body>\n<img class=\"center\"\nsrc=\" \">\n<\/img><\/body><\/html>"
+        "launchViewHTML": "<!DOCTYPE html>\n<html><head>\n<style>\n.center {\n  display: block;\n  margin-left: auto;\n  margin-right: 20dp;\n  width: 50%;\n\n}\n<\/style>\n\n<\/head><body>\n<img class=\"center\"\nsrc=\" \">\n<\/img><\/body><\/html>"
     }]
